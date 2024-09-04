@@ -1,0 +1,19 @@
+[
+    {
+      "_id": "64f8f9180e4bde8aefc8d6d5",
+      "employee_id": "E123",
+      "checkin_time": "2024-08-27T09:00:00",
+      "checkout_time": "2024-08-27T17:00:00",
+      "location": "Office",
+      "status": "Completed"
+    },
+    {
+      "_id": "64f8f9180e4bde8aefc8d6d6",
+      "employee_id": "E124",
+      "checkin_time": "2024-08-27T09:15:00",
+      "checkout_time": "2024-08-27T17:05:00",
+      "location": "Office",
+      "status": "Completed"
+    }
+  ]
+  

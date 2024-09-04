@@ -1,0 +1,21 @@
+[
+    {
+      "_id": "64f8f9180e4bde8aefc8d6d3",
+      "employee_id": "E123",
+      "date": "2024-08-25",
+      "time_in": "09:00",
+      "time_out": "17:00",
+      "reason": "Forgot to clock in",
+      "status": "Pending"
+    },
+    {
+      "_id": "64f8f9180e4bde8aefc8d6d4",
+      "employee_id": "E124",
+      "date": "2024-08-26",
+      "time_in": "09:00",
+      "time_out": "16:00",
+      "reason": "Incorrect clock out time",
+      "status": "Pending"
+    }
+  ]
+  

@@ -1,0 +1,19 @@
+[
+    {
+      "_id": "64f8f9180e4bde8aefc8d6d7",
+      "employee_id": "E123",
+      "date": "2024-09-05",
+      "reason": "Personal work",
+      "expected_hours": 8,
+      "status": "Pending"
+    },
+    {
+      "_id": "64f8f9180e4bde8aefc8d6d8",
+      "employee_id": "E124",
+      "date": "2024-09-06",
+      "reason": "Waiting for repair",
+      "expected_hours": 6,
+      "status": "Pending"
+    }
+  ]
+  
