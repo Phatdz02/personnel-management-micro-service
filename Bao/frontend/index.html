@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee's Activity Management System</h1>
+    </header>
+    
+    <main>
+        <!-- Create Campaign Section -->
+        <section class="form-section">
+            <h2>Create Campaign</h2>
+            <form id="create-campaign-form">
+                <label for="campaign-name">Campaign Name:</label>
+                <input type="text" id="campaign-name" required>
+
+                <div class="date-group">
+                    <div class="date-field">
+                        <label for="start-date">Start Date:</label>
+                        <input type="date" id="start-date" required>
+                    </div>
+                    <div class="date-field">
+                        <label for="end-date">End Date:</label>
+                        <input type="date" id="end-date" required>
+                    </div>
+                </div>
+
+                <button type="submit">Create Campaign</button>
+            </form>
+        </section>
+
+        <!-- Add Employee to Campaign Section -->
+        <section class="form-section">
+            <h2>Add Employee to Campaign</h2>
+            <form id="add-employee-form">
+                <label for="employee-id">Employee ID:</label>
+                <input type="text" id="employee-id" required>
+
+                <label for="campaign-select">Select Campaign:</label>
+                <select id="campaign-select" required>
+                    <!-- Options will be populated here -->
+                </select>
+
+                <button type="submit">Add Employee</button>
+            </form>
+        </section>
+
+        <!-- List of Campaigns Section -->
+        <section class="data-section">
+            <h2>List of Campaigns</h2>
+            <table id="campaign-list">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Campaign Name</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Campaigns will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Employees in Campaign Section -->
+        <section class="data-section">
+            <h2>Employees in Campaign</h2>
+            <label for="campaign-select-for-employees">Select Campaign:</label>
+            <select id="campaign-select-for-employees" required>
+                <!-- Options will be populated here -->
+            </select>
+
+            <table id="employee-list">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Employee ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Employees will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Results Section -->
+        <section class="data-section">
+            <h2>Results</h2>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Employee ID</th>
+                        <th>Campaign Name</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Distance (km)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Results will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,18 +1,45 @@
 version: '3.8'
 
 services:
-  web:
-    build: .
-    ports:
-      - "5000:5000"
-    depends_on:
-      - mongodb
   mongodb:
-    image: mongo
+    build:
+      context: ./database
     ports:
       - "27017:27017"
     volumes:
-      - mongo-data:/data/db
+      - mongodb_data:/data/db
+
+  campaigns-service:
+    build:
+      context: ./microservices/campaigns_service
+    ports:
+      - "5001:5000"
+    depends_on:
+      - mongodb
+
+  employees-service:
+    build:
+      context: ./microservices/employees_service
+    ports:
+      - "5002:5000"
+    depends_on:
+      - mongodb
+
+  activities-service:
+    build:
+      context: ./microservices/activities_service
+    ports:
+      - "5004:5000"
+    depends_on:
+      - mongodb
+
+  results-service:
+    build:
+      context: ./microservices/results_service
+    ports:
+      - "5003:5000"
+    depends_on:
+      - mongodb
 
 volumes:
-  mongo-data:
+  mongodb_data:
